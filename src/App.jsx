@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Analytics } from '@vercel/analytics/react';
 import {
   Upload,
   FileType,
@@ -112,6 +113,7 @@ export default function App() {
         © {new Date().getFullYear()} Resume Roaster - Burning bad resumes since
         2025
       </footer>
+      <Analytics />
     </div>
   );
 }
